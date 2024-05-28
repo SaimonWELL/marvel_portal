@@ -61,7 +61,6 @@ const RandomChar = () =>{
 }
 
 const View = ({char}) => {
-    console.log(char)
     const {name, description, thumbnail, homepage,wiki} = char;
 
 
