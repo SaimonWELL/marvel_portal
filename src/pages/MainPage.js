@@ -5,6 +5,7 @@ import ErrorBoundary from "../components/errorBoundary/ErrorBoundary";
 
 import decoration from '../resources/img/vision.png';
 import {useState} from "react";
+import CharacterSearch from "../components/сharacterSearch/CharacterSearch";
 
 const MainPage = () =>{
 

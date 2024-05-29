@@ -6,6 +6,7 @@ import useMarvelService from "../../services/MarvelService";
 import ErrorMessage from "../errorMessage/ErrorMessage";
 import Spinner from "../spinner/Spinner";
 import Skeleton from "../skeleton/Skeleton";
+import CharacterSearch from "../сharacterSearch/CharacterSearch";
 
 const CharInfo =(props)=> {
 
@@ -45,6 +46,7 @@ const CharInfo =(props)=> {
             {errorMessage}
             {spinner}
             {content}
+            <CharacterSearch/>
         </div>
     )
 
@@ -67,7 +69,7 @@ const View = ({char}) =>{
 
 
     return(
-        <>
+        <div className="char__infoBlock">
             <div className="char__basics">
                 <img src={thumbnail} alt={name} style={imgStyle}/>
                 <div>
@@ -100,7 +102,7 @@ const View = ({char}) =>{
 
 
             </ul>
-        </>
+        </div>
     )
 }
 
