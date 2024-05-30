@@ -11,11 +11,10 @@ import'./characterSearch.scss'
 const setContent = (process,char) =>{
     switch (process){
         case 'waiting':
-            return null
-            break;
+            return null;
+
         case 'loading':
             return null;
-            break;
 
         case 'confirmed':
             return !char ? null : char.length >0 ?
@@ -28,10 +27,8 @@ const setContent = (process,char) =>{
                 <div className="char__search-error">
                     The character was not found. Check the name and try again
                 </div>;
-            break;
         case 'error':
             return <div className="char__search-critical-error"><ErrorMessage/></div>;
-                break;
                 default:
                 throw new Error('Unexpected process state');
     }
